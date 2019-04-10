@@ -18,13 +18,13 @@ app.post('/login',(req,res)=>{
   var user=req.body.username;
   var pass=req.body.password;
 
-  if( (user=="admin")&&pass==1234 )
+  if( user=="admin"&&pass==1234 )
   {
-    res.send("success");
+    res.send(JSON.stringify({status:"success"}));
   }
   else
   {
-    res.send("failed");
+    res.send(JSON.stringify({status:"failed"}));
   }
 });
 app.post('/register',(req,res)=>{
