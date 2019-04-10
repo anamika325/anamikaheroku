@@ -23,7 +23,7 @@ app.post('/login',(req,res)=>{
   }
   else
   {
-    res.send("failed");
+    res.send(user);
   }
 });
 
