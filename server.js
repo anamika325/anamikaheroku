@@ -32,7 +32,7 @@ app.post('/register',(req,res)=>{
   var admi=req.body.admission_number;
   var user=req.body.username;
   var pass=req.body.password;
-  res.send('name'+'admi'+'user'+'pass')
+  res.send(name+admi+user+pass)
 });
 
 
