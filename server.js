@@ -24,7 +24,7 @@ app.post('/login',(req,res)=>{
   }
   else
   {
-    res.send(user+pass);
+    res.send("failed");
   }
 });
 
