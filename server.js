@@ -27,6 +27,13 @@ app.post('/login',(req,res)=>{
     res.send("failed");
   }
 });
+app.post('/register',(req,res)=>{
+  var name=req.body.name;
+  var admi=req.body.admission_number;
+  var user=req.body.username;
+  var pass=req.body.password;
+  res.send('name'+'admi'+'user'+'pass')
+});
 
 
 app.get('/',(req,res)=>{
