@@ -23,7 +23,7 @@ app.post('/login',(req,res)=>{
   }
   else
   {
-    res.send(user);
+    res.send(pass);
   }
 });
 
