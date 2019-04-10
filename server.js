@@ -44,6 +44,6 @@ app.get('/contact',(req,res)=>{
 app.get('/gallery',(req,res)=>{
   res.render('gallery');
 });
-app.listen(3000,()=>{
+app.listen(process.env.PORT || 3000,()=>{
   console.log('web app running successfully')
 });
