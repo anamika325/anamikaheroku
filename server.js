@@ -13,17 +13,18 @@ app.post('/getdata',(req,res)=>{
   var email=req.body.getemail;
    res.send(name+"<br>"+address+"<br>"+place+"<br>"+mobile+"<br>"+email+"<br>");
 });
+
 app.post('/login',(req,res)=>{
   var user=req.body.username;
   var pass=req.body.password;
 
-  if(user=='admin'&&pass=='1234')
+  if( (user=="admin") && (pass=="1234") )
   {
     res.send("success");
   }
   else
   {
-    res.send(pass);
+    res.send(user+pass);
   }
 });
 
